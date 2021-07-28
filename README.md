@@ -1,0 +1,2 @@
+# Data-Manipulation_with_dplyr_in_R
+Data Manipulation with R is data wrangling with one of the most powerful R packages - dplyr. Data manipulation is a vital data analysis skill – actually, it is the foundation of data analysis.  The goal of data preparation is to convert your raw data into a high quality data source, suitable for analysis. More often than not, this process involves a lot of work. The dplyr package contains the tools that can make this work much easier.
