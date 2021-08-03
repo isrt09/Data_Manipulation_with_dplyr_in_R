@@ -67,6 +67,31 @@ gapminder %>%
   select(country, pop) %>% 
   count(country, wt = pop, sort = TRUE)
 
+gapminder %>% 
+  mutate(gdp = pop * gdpPercap) %>% 
+  head()
+
+gapminder %>% 
+  mutate(gdp = pop * gdpPercap / 10^6) %>% 
+  head()
+
+
+# Filter with relational operators
+filter(gapminder, country == 'Bangladesh')
+
+filter(gapminder, country != 'Bangladesh')
+
+filter(gapminder, gdpPercap >= 800)
+
+filter(gapminder, gdpPercap <= 700)
+
+filter(gapminder, country =='Bangladesh' & gdpPercap <= 700)
+
+filter(gapminder, country =='Bangladesh' & gdpPercap >= 700)
+
+filter(gapminder, country =='Bangladesh' | gdpPercap >= 700)
+
+filter(gapminder, country %in% c('Bangladesh', 'Afghanistan'))
 
 
 
