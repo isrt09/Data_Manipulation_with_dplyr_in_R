@@ -8,6 +8,6 @@ Data Manipulation with R is data wrangling with one of the most powerful R packa
 - Mutate    
 - Arrange   
 - Summarise 
-- gplimpse
+- glimpse
 
 
