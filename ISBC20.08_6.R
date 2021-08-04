@@ -5,9 +5,11 @@ data<- read.csv("C:/Users/user/Documents/dplyr/demographics.csv")
 
 glimpse(data)
 
-d1 <- group_by(data, educ)
+d1 <- group_by(data, educ) # Group By
 
 View(d1)
+
+# Summary according to Group By
 
 summarise(d1, avg = mean(income))
  
