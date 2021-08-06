@@ -26,3 +26,15 @@ semi_join_2 <- semi_join(buildings, cities)
 
 glimpse(semi_join_1)
 glimpse(semi_join_2)
+
+# left join workflow
+left_join_1 <- left_join(buildings, cities)
+left_join_2 <- left_join(cities, buildings)
+
+# anti join workflow
+anti_join_1 <- anti_join(cities, buildings)
+anti_join_2 <- anti_join(buildings,cities)
+
+# full join workflow
+full_join_1 <- full_join(cities,buildings)
+full_join_2 <- full_join(buildings,cities)
